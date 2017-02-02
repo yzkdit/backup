@@ -16,9 +16,9 @@ CREATE TABLE `T_storage_in` (
   `time` time NOT NULL,
   `stock` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `T_storage_in` VALUES (1,1,'2017-02-01','14:02:28',10);
+INSERT INTO `T_storage_in` VALUES (4,11,'2017-02-02','15:19:13',5),(5,11,'2017-02-02','15:19:31',5),(11,1,'2017-02-02','15:31:26',3),(12,1,'2017-02-02','15:38:10',53),(13,1,'2017-02-02','15:40:07',2),(14,4,'2017-02-02','15:40:23',3),(15,11,'2017-02-02','15:40:38',5);
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `T_storage_out` (
@@ -91,7 +91,7 @@ CREATE TABLE `storage` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `storage` VALUES (1,'83-4004.83-8836','テスト','','',0,0,0,'49HA026186','',0,0,'','','','',17,'',NULL,NULL,'2017-02-01 04:13:49','2017-02-01 04:13:49',NULL);
+INSERT INTO `storage` VALUES (1,'83-4004.83-8836','テスト','','',0,0,0,'49HA026186','',0,0,'','','','',17,'',NULL,NULL,'2017-02-01 04:13:49','2017-02-02 06:42:58','2017-02-02 06:42:58');
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
@@ -107,4 +107,4 @@ CREATE TABLE `users` (
   UNIQUE KEY `users_username_unique` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `users` VALUES (1,'admin','$2y$10$aeDItqZKVx90yW872LEZ/O1Wpci/bip6c6DoHDITInV5BsEX8fkWy','管理者','mxdqmFXWqMmqF5TKB5smsuRGEYjWrQ3CXPDOvYqlgyzq79iJ5PV4hGNJ9wN7','2017-01-22 15:00:00','2017-02-01 05:21:52',NULL),(2,'takaoka','$2y$10$Es1BHJOxP4S5yJejNGh2Vu/3UVDdRPf..zx4.YALDHb0n2mda1XPK','管理者',NULL,'2017-01-22 15:00:00','2017-01-22 15:00:00',NULL);
+INSERT INTO `users` VALUES (1,'admin','$2y$10$aeDItqZKVx90yW872LEZ/O1Wpci/bip6c6DoHDITInV5BsEX8fkWy','管理者','4X3f0PUhocIEjJcfuo4FViIK995j7uXqi7Ur1UYwtSGo6Ku1570jpr12yLmy','2017-01-22 15:00:00','2017-02-02 07:59:40',NULL),(2,'takaoka','$2y$10$Es1BHJOxP4S5yJejNGh2Vu/3UVDdRPf..zx4.YALDHb0n2mda1XPK','管理者',NULL,'2017-01-22 15:00:00','2017-01-22 15:00:00',NULL);
