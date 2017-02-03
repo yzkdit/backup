@@ -16,9 +16,8 @@ CREATE TABLE `T_storage_in` (
   `time` time NOT NULL,
   `stock` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `T_storage_in` VALUES (4,11,'2017-02-02','15:19:13',5),(5,11,'2017-02-02','15:19:31',5),(11,1,'2017-02-02','15:31:26',3),(12,1,'2017-02-02','15:38:10',53),(13,1,'2017-02-02','15:40:07',2),(14,4,'2017-02-02','15:40:23',3),(15,11,'2017-02-02','15:40:38',5);
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `T_storage_out` (
@@ -89,9 +88,8 @@ CREATE TABLE `storage` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `storage` VALUES (1,'83-4004.83-8836','テスト','','',0,0,0,'49HA026186','',0,0,'','','','',17,'',NULL,NULL,'2017-02-01 04:13:49','2017-02-02 06:42:58','2017-02-02 06:42:58');
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
@@ -107,4 +105,4 @@ CREATE TABLE `users` (
   UNIQUE KEY `users_username_unique` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-INSERT INTO `users` VALUES (1,'admin','$2y$10$aeDItqZKVx90yW872LEZ/O1Wpci/bip6c6DoHDITInV5BsEX8fkWy','管理者','4X3f0PUhocIEjJcfuo4FViIK995j7uXqi7Ur1UYwtSGo6Ku1570jpr12yLmy','2017-01-22 15:00:00','2017-02-02 07:59:40',NULL),(2,'takaoka','$2y$10$Es1BHJOxP4S5yJejNGh2Vu/3UVDdRPf..zx4.YALDHb0n2mda1XPK','管理者',NULL,'2017-01-22 15:00:00','2017-01-22 15:00:00',NULL);
+INSERT INTO `users` VALUES (1,'admin','$2y$10$m5hAWOR.PPdf4sA4SNW5ae9WvXFZNRVKn5/Eca.Vo1Yu7nJJSphV.','管理者','lxyd59ZkyechaNKezFyuktP7jaMpfJBeXEwBn0Z8JGvhKjjLkWwwhKKCwdwW','2017-02-02 15:00:00','2017-02-03 06:59:48',NULL),(2,'takaoka','$2y$10$bmC66NEN/TKl8FpzFO23ou1AJ/oIgSxAZ9MJXfXasFI08Ix.1WjXC','管理者',NULL,'2017-02-02 15:00:00','2017-02-02 15:00:00',NULL);
